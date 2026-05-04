@@ -24,3 +24,13 @@ Day 2: Configured core server settings
 - Promoted server to Domain Controller
 - Created new forest: piyushlab.local
 - Configured domain environment
+
+Day 3: Created Organizational structure
+- Added OUs: HR, IT, Sales
+- Created Users: Added multiple users across departments
+- Implemented group-based access control
+- Created Security Groups (HR_Group, IT_Group, Sales_Group)
+- Assigned users to groups
+- Configured shared resources
+- Created shared folder (CompanyData)
+- Applied role-based permissions
