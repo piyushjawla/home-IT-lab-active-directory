@@ -27,10 +27,19 @@ Day 2: Configured core server settings
 
 Day 3: Created Organizational structure
 - Added OUs: HR, IT, Sales
-- Created Users: Added multiple users across departments
+Created Users: Added multiple users across departments
 - Implemented group-based access control
 - Created Security Groups (HR_Group, IT_Group, Sales_Group)
 - Assigned users to groups
 - Configured shared resources
 - Created shared folder (CompanyData)
 - Applied role-based permissions
+
+Day 4: Set up client machine
+- Installed Windows 10 VM (CLIENT01)
+- Configured network to connect with domain controller
+Domain integration: Successfully joined CLIENT01 to piyushlab.local
+User testing: Logged in as domain users
+- Verified authentication
+Resource access testing: Accessed shared folder from client machine
+- Tested role-based permissions
