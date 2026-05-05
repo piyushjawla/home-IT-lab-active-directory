@@ -43,3 +43,8 @@ Day 4: Set up client machine
 - Verified authentication
 - Resource access testing: Accessed shared folder from client machine
 - Tested role-based permissions
+- Implemented Group Policy Objects (GPO)
+- Created GPO to restrict Control Panel access
+- Applied policy to Sales department
+- Security policy implementation: Configured password policy (minimum length, complexity)
+- Enforced domain-wide security settings
