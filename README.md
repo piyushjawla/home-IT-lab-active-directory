@@ -1,22 +1,22 @@
 # home-IT-lab-active-directory
 
-##Objective
+## Objective
 To simulate a real-world IT infrastructure using Windows Server and client machines.
 
-##What I will build
+## What I will build
 - Domain Controller
 - User management system
 - Network configuration
 - Group policies
 
-##Progress Log
-Day 1: Repository created and environment setup started
+## Progress Log
+## Day 1: Repository created and environment setup started
 - Installed Windows server 2019 on Virtualbox.
 - Created virtual machine (DC-Server)
 - Allocated 4GB RAM and 50GB Storage
 - Successfully booted OS
 
-Day 2: Configured core server settings
+## Day 2: Configured core server settings
 - Set static IP address (192.168.1.10)
 - Renamed server to DC01
 - Installed Active Directory Domain Services
@@ -25,7 +25,7 @@ Day 2: Configured core server settings
 - Created new forest: piyushlab.local
 - Configured domain environment
 
-Day 3: Created Organizational structure
+## Day 3: Created Organizational structure
 - Added OUs: HR, IT, Sales
 - Created Users: Added multiple users across departments
 - Implemented group-based access control
@@ -35,7 +35,7 @@ Day 3: Created Organizational structure
 - Created shared folder (CompanyData)
 - Applied role-based permissions
 
-Day 4: Set up client machine
+## Day 4: Set up client machine
 - Installed Windows 10 VM (CLIENT01)
 - Configured network to connect with domain controller
 - Domain integration: Successfully joined CLIENT01 to piyushlab.local
@@ -47,4 +47,11 @@ Day 4: Set up client machine
 - Created GPO to restrict Control Panel access
 - Applied policy to Sales department
 - Security policy implementation: Configured password policy (minimum length, complexity)
-- Enforced domain-wide security settings
+- Enforced domain-wide security settings\
+  
+### GPO troubleshooting and resolution: Observed that Control Panel restriction was not applied on client machine
+- Used `gpresult` to see applied policies
+- Identified incorrect GPO linking as root cause
+- Linked GPO to Sales OU
+- Forced policy update using `gpupdate`
+- Successfully validated restriction enforcement
