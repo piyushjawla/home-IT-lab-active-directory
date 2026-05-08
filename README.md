@@ -55,7 +55,7 @@ IP Address: 192.168.1.10
 ### Server Renaming
 
 Renamed the server to DC01 before Active Directory deployment.
-![Server Renamin](screenshost/system_name_showing_DC01.png)
+![Server Renaming](screenshost/system_name_showing_DC01.png)
 
 
 ### 🏢 Active Directory Deployment
@@ -67,7 +67,7 @@ Installed Active Directory Domain Services role through Server Manager.
 ### Domain Controller Promotion
 
 Promoted the server to a Domain Controller and created the forest: `piyushlab.local`
-![Domain Controller Promotion](screenshots/domain setup screen.png)
+![Domain Controller Promotion](screenshots/domain-setup-screen.png)
 
 ### 👥 Organizational Units & User Management
 Organizational Unit Structure
@@ -77,12 +77,12 @@ Created departmental OUs:
 HR
 IT
 Sales
-![Organizational Units & User Management](screenshots/OUs visible in the domain tree.png)
+![Organizational Units & User Management](screenshots/OUs-visible-in-the-domain-tree.png)
 
 ### User Creation
 
 Added users across departments and organized them within respective OUs.
-![User Creation](screenshots/created users inside OUs.png)
+![User Creation](screenshots/created-users-inside-OUs.png)
 
 ### Security Groups
 
@@ -93,7 +93,7 @@ IT_Group
 Sales_Group
 
 Configured group-based access management.
-![Security Groups](screenshots/groups list.png)
+![Security Groups](screenshots/groups-list.png)
 
 ### 📂 Shared Resource Configuration
 Shared Folder Setup
@@ -103,7 +103,7 @@ Created shared folder:
 CompanyData
 
 Configured role-based permissions for controlled departmental access.
-![Shared Resource Configuration](screenshots/permissions panel for CompanyData shared folder.png)
+![Shared Resource Configuration](screenshots/permissions-panel-for-CompanyData-shared-folder.png)
 
 ### 💻 Client Machine Deployment
 Windows 10 Client Installation
@@ -111,30 +111,30 @@ Windows 10 Client Installation
 Deployed Windows 10 client virtual machine:
 
 CLIENT01
-![Client Machine Deployment](screenshots/Windows 10 CLIENT01 installation.png)
+![Client Machine Deployment](screenshots/Windows-10-CLIENT01-installation.png)
 
 ### Domain Join
 
 Successfully joined CLIENT01 to:
 
 piyushlab.local
-![Domain Join](screenshots/Domain join confirm.png)
+![Domain Join](screenshots/Domain-join-confirm.png)
 
 ### 🔐 Group Policy Configuration
 GPO Creation
 
 Created Group Policy Object to restrict Control Panel access for Sales department users.
-![Group Policy Configuration](screenshots/GPO created.png)
+![Group Policy Configuration](screenshots/GPO-created.png)
 
 ### Security Filtering
 
 Applied policy specifically to the Sales OU.
-![Security Filtering](screenshots/Security filtering.png)
+![Security Filtering](screenshots/Security-filtering.png)
 
 ### Policy Enforcement
 
 Validated successful enforcement of Control Panel restrictions.
-![Policy Enforcement](screenshots/GPO applied successfully.png)
+![Policy Enforcement](screenshots/GPO-applied-successfully.png)
 
 ### 🛠 Troubleshooting
 GPO Troubleshooting
@@ -146,12 +146,12 @@ Troubleshooting Steps
 - Identified incorrect GPO linking
 - Linked the GPO correctly to the Sales OU
 - Forced policy update using gpupdate
-![Troubleshooting](screenshots/Linked Control panel restriction GPO to Sales OU.png)
+![Troubleshooting](screenshots/Linked-Control-panel-restriction-GPO-to-Sales-OU.png)
 
 ### Validation
 
 Successfully confirmed policy application and restriction enforcement.
-![Validation](screenshots/Control panel restriction.png)
+![Validation](screenshots/Control-panel-restriction.png)
 
 ### 📚 Key Learnings
 - Active Directory Domain Services deployment
