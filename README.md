@@ -55,7 +55,7 @@ IP Address: 192.168.1.10
 ### Server Renaming
 
 Renamed the server to DC01 before Active Directory deployment.
-![Server Renaming](screenshost/system_name_showing_DC01.png)
+![Server Renaming](screenshots/system_name_showing_DC01.png)
 
 
 ### 🏢 Active Directory Deployment
@@ -142,10 +142,10 @@ GPO Troubleshooting
 Initially, the Control Panel restriction policy was not being applied correctly on the client machine.
 
 Troubleshooting Steps
-- Used gpresult to verify applied policies
+- Used `gpresult` to verify applied policies
 - Identified incorrect GPO linking
 - Linked the GPO correctly to the Sales OU
-- Forced policy update using gpupdate
+- Forced policy update using `gpupdate`
 ![Troubleshooting](screenshots/Linked-Control-panel-restriction-GPO-to-Sales-OU.png)
 
 ### Validation
